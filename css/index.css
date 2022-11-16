@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  width: 85%;
+  max-width: 318.75px;
+}
+
+h1 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  width: 95%;
+}
+
+section p {
+  line-height: 23px;
+}
+
+button {
+  width: 60%;
+  align-self: center;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #fff;
+  border-style: none;
+  color: hsl(257, 40%, 49%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.mockup {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.logo {
+  width: 35%;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social-logo {
+  width: 15px;
+  fill: #fff;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+.social-logo:hover {
+  fill: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  transition: .3s;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+
+  main {
+    max-width: none;
+  }
+
+  .mockup {
+    width: 85%;
+  }
+
+  section {
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .container {
+    text-align: start;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 64px;
+  }
+
+  button {
+    align-self: flex-start;
+    width: 30%;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+}
